@@ -12,3 +12,13 @@ func TestSum(t *testing.T) {
 	}
 
 }
+
+func TestCum(t *testing.T) {
+	want := 6
+	got := Cum(1, 2, 3)
+
+	if got != want {
+		t.Logf("Error: Se esperaba %d, se obtuvo: %d", want, got)
+		t.Fail()
+	}
+}
