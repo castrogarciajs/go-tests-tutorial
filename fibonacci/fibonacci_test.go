@@ -24,3 +24,12 @@ func TestFibonacciRec(t *testing.T) {
 	}
 
 }
+
+func TestFibonacciRecMemo(t *testing.T) {
+	want := 55
+	got := fibonacciRecMemo(10)
+
+	if got != want {
+		t.Errorf("Se esperaba %d, se obtuvo %d", want, got)
+	}
+}
